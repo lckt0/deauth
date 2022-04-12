@@ -44,7 +44,7 @@
 <div class="wrapper center">
     <div class="home" id="home">
         <div class="home-text">
-            <h1 id="botname">A Power</h1>
+            <h1 id="botname">Power.</h1>
             <h3 style="margin-left: 0;">Highest Security</h3>
             <div class="container">
                 <p>Advanced Discord Bot for <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
@@ -54,12 +54,15 @@
                href="https://discord.com/api/oauth2/authorize?client_id=946133754768920576&permissions=8&redirect_uri=https%3A%2F%2Farsh-3.github.io%2Fadded.html&response_type=code&scope=identify%20bot%20applications.commands"
                target="_blank">Invite</a>
             <a class="home-btn" href="https://arsh3.gitbook.io/deauth" target="_blank">Documentation</a>
-            
+
         </div>
+        <div class="home-img">
+            <img alt="" src="Sources/Logo.png">
+        </div>
+
     </div>
 </div>
-<!-- home end -->
-<!-- features -->
+
 <div class="features">
     <div class="curve">
         <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
@@ -228,7 +231,7 @@
                     </div>
                 </span>
         </div>
-
+        
         <div class="command" data-name="general">
             <h2>ban</h2><span>
                     <div class="cmdinfo">
@@ -241,6 +244,14 @@
             <h2>unban</h2><span>
                     <div class="cmdinfo">
                         <p>UnBans a user.</p>
+                    </div>
+                </span>
+        </div>
+
+        <div class="command" data-name="module">
+            <h2>lock</h2><span>
+                    <div class="cmdinfo">
+                        <p>Locks your server to outside.</p>
                     </div>
                 </span>
         </div>
@@ -268,14 +279,7 @@
                     </div>
                 </span>
         </div>
-
-        <div class="command" data-name="general">
-            <h2>manage</h2><span>
-                    <div class="cmdinfo">
-                        <p>Batch verify & unverify operations.</p>
-                    </div>
-                </span>
-        </div>
+        
 
         <div class="command" data-name="general">
             <h2>cleanup</h2><span>
@@ -317,12 +321,11 @@
             <!-- question start -->
             <div class="topic">
                 <div class="open">
-                    <h2 class="question">How it works?</h2>
+                    <h2 class="question">Does DeAuth have premium?</h2>
                     <span class="faq-t"></span>
                 </div>
-                <p class="answer">When a new user joins your server, DeAuth will quarantine him and ask to verify.
-                    While the user is in quarantine it won't be able to do anything like limited. If it passes the
-                    verification, the quarantine is removed and your server
+                <p class="answer">We believe in everybody should are equal. We don't have any premium membership or
+                    anything like this. But You can always donate to us!
                     is accessed.
                 </p>
             </div>
@@ -330,41 +333,21 @@
             <!-- question start -->
             <div class="topic">
                 <div class="open">
-                    <h2 class="question">Captcha Protection</h2>
+                    <h2 class="question">Can DeAuth detect alt accounts?</h2>
                     <span class="faq-t"></span>
                 </div>
-                <p class="answer">We are using the text-based captcha interaction module to improve security. This
-                    interaction cannot bypassable with OCR's. Everything is for your server security. :)</p>
+                <p class="answer">No, this is impossible unless forcing users to click a link. As those kind of bots can
+                    bypassable with simple methods, we don't want to bring this for either your server members and you.
+                    Also users won't want to waste their time to clicking link.</p>
             </div>
             <!-- question end -->
             <!-- question start -->
             <div class="topic">
                 <div class="open">
-                    <h2 class="question">Logging
+                    <h2 class="question">I Found a Bug/Idea!
                     </h2><span class="faq-t"></span>
                 </div>
-                <p class="answer">We offer a logging feature which allows you getting notify about all verify
-                    attempts. </p>
-            </div>
-            <!-- question end -->
-            <!-- question start -->
-            <div class="topic">
-                <div class="open">
-                    <h2 class="question">Export/Import in Configs
-                    </h2><span class="faq-t"></span>
-                </div>
-                <p class="answer">If you want you can share your config to anywhere else or better, import the
-                    config from anywhere. Use the config of other servers, or made it your own.</p>
-            </div>
-            <!-- question end -->
-            <!-- question start -->
-            <div class="topic">
-                <div class="open">
-                    <h2 class="question">Batch Operations
-                    </h2><span class="faq-t"></span>
-                </div>
-                <p class="answer">Make a batch operations of your whole server members. Force all members to verify
-                    or kick & ban unverified users. </p>
+                <p class="answer">Could you contact to me? our support server in below. </p>
             </div>
         </main>
     </div>
@@ -393,7 +376,7 @@
         </div>
     </div>
     <!-- replace with your server widget and make the width 100% -->
-    <iframe allowtransparency="true" frameborder="0" height="600"
+    <iframe id="guild_iframe" allowtransparency="true" frameborder="0" height="600"
             sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
             src="https://discord.com/widget?id=946134419104743454&theme=dark"
             width="100%"></iframe>

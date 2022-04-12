@@ -1,4 +1,5 @@
 ## DeAuth
+
 * This repo is created to host the [DeAuth](https://arsh-3.github.io/deauth) website.
 
 > DeAuth is security and protection focused discord bot which allows you easily protect your server from raiders and fake accounts with simple commands.
@@ -7,8 +8,9 @@
 
 ## Forking
 
-> Feel free to fix grammer errors, stability errors, or **most important** one 
+> Feel free to fix grammer errors, stability errors, or **most important** one
 > mobile compatibility errors by pull request.
 
-## License 
+## License
+
 Licensed under the **MIT** License.

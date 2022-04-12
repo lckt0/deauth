@@ -15,34 +15,38 @@
 }
 
 @media screen and (max-width: 500px) and (min-width: 100px) {
-    header{
+
+    header {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 1rem;
     }
 
-    header nav .top-nav{
-        display:flex;
+    header nav .top-nav {
+        display: flex;
     }
 
-    .nav-area li{
+    .nav-area li {
         padding: 0 10px;
     }
 
-    .wrapper{
+    .wrapper {
+    }
+
+    .wrapper {
         width: 100% !important;
     }
 
-    .home{
+    .home {
         margin-top: 2rem !important;
     }
 
-    .home-text{
+    .home-text {
         width: 90%;
     }
 
-    .home .home-text .container{
+    .home .home-text .container {
         min-height: auto;
         height: auto;
         justify-content: center;
@@ -50,7 +54,7 @@
 
     }
 
-    .home .home-text .container p{
+    .home .home-text .container p {
         margin-top: 5px;
         padding: 1rem 2.5rem;
         height: 8rem;
@@ -58,16 +62,25 @@
 
     }
 
-    .home .home-text .container p span{
+    .home .home-text .container p span {
         display: inline-block;
     }
 
-    .home-btn{
+    .home-btn {
         display: block;
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
     }
 
 }
 
+.iframe {
+    display: block;
+    width: 100%;
+}
 
 * {
     margin: 0;
@@ -179,10 +192,6 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--main-hover-color);
 
-}
-
-@media only screend and (max-width: 959px) {
-    .zekicannet .css kodlarımız buraya gelecek
 }
 
 .reveal {
@@ -798,5 +807,24 @@ footer {
         margin: 5px;
     }
 }
+
+/* -- LockT's Fix - BEGIN --*/
+@media screen and (max-width: 500px) {
+    .categorys {
+        margin-top: 30px;
+    }
+
+    .commands, .live-search-box, .topic, #guild_iframe {
+        width: 92vw;
+        margin-left: 15px!important;
+        margin-right: 15px!important;
+    }
+
+    #magicMouseCursor, #magicPointer {
+        visibility: hidden;
+    }
+}
+
+/* -- END -- */
 
 /* @ end */
